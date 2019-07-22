@@ -14,9 +14,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-x": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "docker build -t asia.gcr.io/trav-project/gis-test:dev .",
+    "push": "docker push asia.gcr.io/trav-project/gis-test:dev"
   },
   "eslintConfig": {
     "extends": "react-app"

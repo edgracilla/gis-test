@@ -1,0 +1,16 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: gis-test
+  namespace: dev
+spec:
+  ports:
+  - name: gis-port
+    port: 8080
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: gis-test
+    version: v1
+  type: LoadBalancer
