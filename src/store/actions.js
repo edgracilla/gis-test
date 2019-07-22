@@ -1,0 +1,5 @@
+
+export const SEARCH = 'SEARCH'
+
+export const CHANGE_BASEMAP = 'CHANGE_BASEMAP'
+export const CHANGE_VIEWTYPE = 'CHANGE_VIEWTYPE'
